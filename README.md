@@ -19,7 +19,7 @@ This is a full skin template to make Thunderbird look just as the great "Live Ma
   * better THREAD visibility
   * better "active" visibility
     
-<img width="450"  alt="extract01" src="https://github.com/user-attachments/assets/6d256842-76b6-41f4-851a-b9952347887e" /> **VS** <img width="450"  alt="extract01_orig" src="https://github.com/user-attachments/assets/d490c538-4745-4ad8-a2e7-8d6095066d6d" />
+<img width="430"  alt="extract01" src="https://github.com/user-attachments/assets/6d256842-76b6-41f4-851a-b9952347887e" /> **VS** <img width="430"  alt="extract01_orig" src="https://github.com/user-attachments/assets/d490c538-4745-4ad8-a2e7-8d6095066d6d" />
 
  * Subject highlighted on top
  * Better actions buttons
