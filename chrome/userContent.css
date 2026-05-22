@@ -1,0 +1,6 @@
+/* Augmenter les margin du mail de rédaction */
+
+
+body {
+    margin: 12px 10px !important;
+}

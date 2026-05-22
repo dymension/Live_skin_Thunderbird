@@ -1,0 +1,394 @@
+/* toolkit.legacyUserProfileCustomizations.stylesheets sur True */
+/* mail.identity.default.suppress_signature_separator sur True */
+/* mailnews.attachments.display.start_expanded sur TRUE */
+/* mailnews.expand_threads sur TRUE */
+/* dans paramètres/rédaction : 
+  - désactiver "Utiliser le format paragraphe"
+  - Police : Calibri Moyenne
+  */
+
+/***************** GÉNÉRAL **************************/
+body  {
+	/*font-family: "Segoe UI" !important;*/
+      }
+}
+ /* on augmente les hauteurs */ 
+.card-layout {  height: 54px !important; }
+.card-layout > td { padding-top : 0 !important; padding-bottom : 0 !important;}
+
+[uidensity="compact"] .card-layout {  height: 45px !important; }
+[uidensity="touch"] .card-layout {  height: 64px !important; }
+
+
+/***************** COLONNE BAL **************************/
+
+/* on identifie mieux les blocs de BAL */
+li.children[data-server-type] > div.container {
+  background-color: #f0f0f0;
+  font-size : 14.5px !important;
+  padding-top: 10px !important;
+}
+li.children[data-server-type]  > div.container > .name {
+  font-family: "Segoe UI semibold" !important;
+  font-weight: normal !important;
+}
+
+
+/*pas de bordures */
+#threadPane > tree-view {
+	background : white !important;
+}
+
+ul[role="group"] li > div {
+  min-block-size: 22px !important;
+  font-size: 13px !important;
+}
+
+
+
+ul[role="group"]  li.selected.current  > div.container, li.children[data-server-type]:has(li[aria-selected="true"])  > .container {
+     background-color: #bbe7ec !important;
+}
+
+
+/******************** On améliore la lisibilité des mails en cards *********************************/
+.card-container {
+	height: 48px !important;
+    border: none !important;
+	letter-spacing: -0.1px !important;
+}
+
+/* surbrillance au hover améliorée*/
+.card-container:hover {
+  background: #cdeff2  !important;
+}
+
+
+.card-container:focus, tr[aria-selected="true"]  .card-container {
+  background-color: #b3d3dc  !important;
+}
+
+.card-layout[data-properties~="unread"] .card-container :is(.sender, .subject), .card-layout[data-properties~="hasUnread"] .card-container :is(.sender, .subject) {
+	font-family : "Segoe UI Semibold" !important;
+	font-weight: normal !important;
+}
+		
+
+/* Expéditeur */
+#threadTree .sender {
+  color: #66676c !important;
+  font-size: 1.12em !important;
+  font-weight:normal !important;
+  padding-inline-start: 0 !important;
+  margin-top: -3px !important;
+}
+
+/* Sujet */
+
+#threadTree .subject {
+  color: #414141     !important;
+}
+.thread-card-subject-container {
+	overflow-y: visible !important;
+}
+
+/* Sujet en premier */
+.card-container .thread-card-dynamic-row {
+  order: 1 !important;
+  font-size: 14.5px !important;
+  line-height: 1.3;
+}
+
+/* Expéditeur en dessous */
+.card-container .thread-card-row {
+  order: 2 !important;
+  opacity: 0.8 !important;
+  font-size: 0.9em !important;
+  margin-left: 4px !important;
+  margin-top : -2px !important;
+}
+
+
+/*********************************************************************************/
+/* on lit mieux les enfants d'une discussion groupée */
+.card-layout.children, .card-layout[data-properties~="thread-children"], .card-layout.children[aria-expanded="true"] > td > div > div:first-child {
+  background-color: #f9f9f9;
+}
+.card-layout[data-properties~="thread-children"]:has(+ tr:not([data-properties~="thread-children"])) td {
+      padding-bottom: 2px !important;
+}
+
+/* icone de conversation */
+.twisty-icon {
+	 content: url("icons/fleche_pt.svg") !important;
+	 height:10px;
+	 border : none !important;
+  }
+ 
+.children[aria-expanded="true"] > div > div > .twisty-icon {
+	content: url("icons/fleche_ptbk.svg") !important;
+	transform:rotate(-45deg) ;
+ }
+ .children .card-container .twisty-icon {
+	block-size: 15px !important;
+	inline-size: 11px !important; 
+ }
+ 
+ /* décallage de la flèche à gauche de l'icône */
+ .thread-card-column {
+  margin-left: -48px;
+  padding-left: 48px;
+}
+.twisty.thread-card-button {
+  left: -48px;
+  position : absolute ! important;
+}
+.card-layout[data-properties~="thread-children"]  td::before {
+	inset-inline-start: calc((var(--tree-card-inline) * 2) - var(--line-width) / 2 + 10px) !important;
+}
+.card-layout[data-properties~="thread-children"]  td::after {
+	inset-inline-start: calc((var(--tree-card-inline) * 2) - var(--circle-size) / 2 + 10px) !important;
+}
+.card-layout[data-properties~="thread-children"]  td > .card-container { left : 6px;}
+
+.card-layout.children button.twisty.thread-card-button {
+    border :none;
+}
+
+
+ /* même icone d'ouverture pour les dossier */
+  .children[aria-expanded="true"] .card-container .twisty-icon {
+	content: url("icons/fleche_ptbk.svg") !important;
+  }
+  
+ .children[aria-expanded="true"] > div > div > .twisty-icon {
+	content: url("icons/fleche_ptbk.svg") !important;
+	transform:rotate(-45deg) ;
+ }
+
+
+	 
+
+/************* on change les icônes des emails **********************/
+
+/* ALL */
+.read-status {
+	width: 40px !important;
+	height: 20px !important;
+	margin-left: 8px;
+}
+
+/* UNREAD */
+.card-layout[data-properties~="unread"] .read-status {
+	content: url("icons/mail_new.svg") !important;
+	height: 21px !important;
+  margin-top: 1px !important;
+}
+/* READ */
+.card-layout[data-properties~="read"] .read-status {
+	content: url("icons/mail_open.svg") !important;
+}
+/* REPLIED */
+.card-layout[data-properties~="replied"] .read-status {
+	content: url("icons/mail_replied.svg") !important;
+	margin-top: 3px;
+}
+.card-layout[data-properties~="replied"][data-properties~="thread-children"] .read-status {
+	content: url("icons/fleche_replied.svg") !important;
+	height: 13px !important;
+}
+
+
+/* FORWARDED */
+.card-layout[data-properties~="forwarded"] .read-status {
+	content: url("icons/mail_forwarded.svg") !important;
+}
+/* MULTIPLE */
+.card-layout.children .read-status {
+	content: url("icons/mail_multiple.svg") !important;
+    height: 17px !important;
+}
+
+.card-layout.children[data-properties~="hasUnread"] .read-status {
+	content: url("icons/mail_multiple_new.svg") !important;
+    height: 17px !important;
+}
+/* on efface le point vert d'origine */
+.card-layout.children[data-properties~="hasUnread"] button.twisty::before {
+	opacity :0;
+}
+/* icone plus petite dans un thread */
+.card-layout[data-properties~="thread-children"] .read-status {
+	width: 30px !important;
+	height: 15px !important;
+	margin-top: 6px;
+}
+		
+
+
+/* on change l'icône répondu */
+/* pas de double icône replied si on est dans un thread */
+.card-layout .state.replied , .card-layout .state.forwarded {
+	display:none !important;
+}
+
+.card-layout.children .state.replied  {
+	content: url("icons/fleche_replied.svg") !important;
+	height: 14px;
+	margin-right: 4px;
+	opacity : 1;
+	display:inline !important;
+}
+
+
+
+
+/* on efface le sujet si on est dans un thread */
+.card-layout[data-properties~="thread-children"] {  height: 25px !important;}
+.card-layout[data-properties~="thread-children"] .card-container {  height: 28px !important; margin-left: 10px !important;}
+
+.card-layout[data-properties~="thread-children"] .thread-card-row {  order: 1 !important; margin-top: 5px !important; overflow: visible !important;}
+.card-layout[data-properties~="thread-children"] .thread-card-dynamic-row {  order: 2 !important; display : none !important;}
+
+
+/*
+.card-layout[data-properties~="thread-children"] .date , .card-layout[data-properties~="thread-children"] .tree-button-more{  margin-top: -15px !important; }
+*/
+
+/* on met l'icone répondu à gauche */
+#threadTree[rows="thread-card"] {
+  & .card-layout {
+    &[data-properties~="replied"] {
+      & .state.replied {
+        order: 1;
+      }
+    }
+  }
+}
+
+#threadTree[rows="thread-card"] {
+  & .card-layout {
+    & td {
+      & .card-container {
+        & .sender {
+          order: 2;
+        }
+      }
+    }
+  }
+}
+
+
+#threadTree[rows="thread-card"] {
+  & .card-layout {
+    & td {
+      & .card-container {
+        & .date {
+          order: 3;
+		  opacity : 0.65 !important;
+        }
+      }
+    }
+  }
+}
+
+#threadTree[rows="thread-card"] {
+  & .card-layout {
+    & td {
+      & .card-container {
+        & .tree-button-more {
+          order: 4;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+/**************** BOUTONS de l'interface ******************/
+.unified-toolbar-button {
+  gap: 0px !important;
+}
+.unified-toolbar .button-icon {    height: 30px !important; }
+.unified-toolbar  .reply .button-icon {	stroke : #5D22BA; }
+.unified-toolbar  .reply-all .button-icon {	stroke : #5D22BA; }
+.unified-toolbar  .forward-inline .button-icon {	stroke : #136C97; }
+.unified-toolbar  .delete .button-icon {	stroke: darkred;}
+.unified-toolbar  .write-message .button-icon {	stroke: darkgreen;}
+
+
+
+
+/********* Fenêtre de lecture du mail ***************/
+#headerSubjectSecurityContainer {
+  order: -1;
+}
+.header-row {
+  color: #be2400;
+  font-size: 20px !important;
+}
+.recipient-multi-line-address, #toHeading, #ccHeading  {
+  color: gray;
+}
+
+#header-view-toolbox {
+  margin-top: -10px;
+}
+.toolbarbutton-1 {
+  height: 40px;
+  background-color: #e9edf0;
+  font-family: "Segoe UI semibold";
+}
+.toolbarbutton-1:hover {
+  background-color: #bae1e9 !important;
+}
+.hdrJunkButton {
+  background-color: #f2e7d3;
+}
+.hdrJunkButton:hover {
+  background-color: #e7d3ad  !important;
+}
+.hdrTrashButton {
+  background-color: #ecddda;
+}
+.hdrTrashButton:hover {
+  background-color: #e5bfb7 !important;
+}
+
+/* pièce jointes en haut
+et toujours ouvertes grâce à  mailnews.attachments.display.start_expanded TRUE dans editeur de configuration */
+#attachmentView {
+  order: 1 !important;
+  min-height:90px !important;
+}
+#messagepane {
+  order: 2 !important;
+}
+/*.attachmentList { height : 60px !important; }*/
+.attachmentItem  { min-width: 280px !important; font-size: 14px !important; }
+.attachmentItem  .attachmentcell-icon {
+	zoom: 1.8;
+	filter: contrast(1.8);
+	/*image-rendering: crisp-edges;*/
+}
+
+
+
+
+
+/********* Fenêtre d'écriture du mail **********/
+/* Pièce jointe en haut */
+#composeContentBox {
+  grid-template:
+    "contacts contacts-splitter headers" minmax(auto, var(--headersSplitter-height))
+    "contacts contacts-splitter format-toolbar" min-content
+    "contacts contacts-splitter headers-splitter" min-content
+    "contacts contacts-splitter attachment-splitter" min-content
+    "contacts contacts-splitter attachment-area" min-content
+    "contacts contacts-splitter message" minmax(33%, 1fr)
+    / minmax(auto, var(--contactsSplitter-width)) min-content minmax(auto, 1fr) !important;
+}
