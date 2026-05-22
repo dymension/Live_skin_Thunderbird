@@ -1,32 +1,91 @@
 @echo off
 setlocal
 
+title Live Skin Thunderbird Installer
+
+echo.
+echo ==========================================
+echo      Live Skin Thunderbird Installer
+echo ==========================================
+echo.
+
+set "SOURCE_DIR=%~dp0"
+set "SOURCE_CHROME=%SOURCE_DIR%chrome"
+set "SOURCE_USERJS=%SOURCE_DIR%user.js"
+
 set "TB_PROFILES=%APPDATA%\Thunderbird\Profiles"
 
 if not exist "%TB_PROFILES%" (
-  echo Dossier de profils Thunderbird introuvable.
-  pause
-  exit /b 1
+    echo ERROR : Thunderbird profiles folder not found.
+    pause
+    exit /b 1
 )
 
-echo Profils Thunderbird detectes :
+echo Please close Thunderbird before continuing.
+pause
+
+echo.
+echo Installing theme...
 echo.
 
-for /d %%D in ("%TB_PROFILES%\*") do (
-  echo Installation dans : %%~nxD
+for /d %%P in ("%TB_PROFILES%\*") do (
 
-  if not exist "%%D\chrome" mkdir "%%D\chrome"
+    echo ------------------------------------------
+    echo Profile : %%~nxP
+    echo ------------------------------------------
 
-  xcopy /E /Y /I "%~dp0chrome" "%%D\chrome" >nul
+    REM ==========================================
+    REM Backup existing files
+    REM ==========================================
 
-  findstr /C:"toolkit.legacyUserProfileCustomizations.stylesheets" "%%D\user.js" >nul 2>nul
-  if errorlevel 1 (
-    echo user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);>>"%%D\user.js"
-  )
+    if exist "%%P\user.js" (
+        copy /Y "%%P\user.js" "%%P\user.js.backup" >nul
+    )
 
-  echo OK.
-  echo.
+    if exist "%%P\chrome" (
+        rmdir /S /Q "%%P\chrome.backup" 2>nul
+        ren "%%P\chrome" "chrome.backup"
+    )
+
+    REM ==========================================
+    REM Create chrome folder if needed
+    REM ==========================================
+
+    if not exist "%%P\chrome" (
+        mkdir "%%P\chrome"
+    )
+
+    REM ==========================================
+    REM Copy theme files if source exists
+    REM ==========================================
+
+    if exist "%SOURCE_CHROME%" (
+        xcopy "%SOURCE_CHROME%\*" "%%P\chrome\" /E /I /Y >nul
+    ) else (
+        echo WARNING : source chrome folder not found.
+    )
+
+    REM ==========================================
+    REM Replace user.js if provided
+    REM ==========================================
+
+    if exist "%SOURCE_USERJS%" (
+        copy /Y "%SOURCE_USERJS%" "%%P\user.js" >nul
+    ) else (
+        echo WARNING : source user.js not found.
+        echo Creating empty user.js
+        type nul > "%%P\user.js"
+    )
+
+    echo Installation completed for this profile.
+    echo.
 )
 
-echo Installation terminee. Fermez puis relancez Thunderbird.
+echo ==========================================
+echo Installation completed successfully.
+echo Restart Thunderbird.
+echo ==========================================
+echo.
+
 pause
+endlocal
