@@ -41,9 +41,15 @@ This is a full skin template to make Thunderbird look just as the great "Live Ma
 
 # Install
 
-just run the install.bat   
-or copy `user.js` and full `/chrome` folder in your Thunderbird profile folder (usually `C:\Users\USERNAME\AppData\Roaming\Thunderbird\Profiles\xxxprofilenamexxx`)
+1. Close Thunderbird
+2. Download ZIP
+3. Extract files
+4. Run `install.bat`
+5. Restart Thunderbird
 
+--
+or copy `user.js` and full `/chrome` folder in your Thunderbird profile folder (usually `C:\Users\USERNAME\AppData\Roaming\Thunderbird\Profiles\xxxprofilenamexxx`)  
+and  
 Make sure the following config editor are set on `TRUE` :
  * toolkit.legacyUserProfileCustomizations.stylesheets
  * mail.identity.default.suppress_signature_separator
