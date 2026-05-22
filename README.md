@@ -19,13 +19,13 @@ This is a full skin template to make Thunderbird look just as the great "Live Ma
   * better THREAD visibility
   * better "active" visibility
     
-<img width="430"  alt="extract01" src="https://github.com/user-attachments/assets/6d256842-76b6-41f4-851a-b9952347887e" /> **VS** <img width="430"  alt="extract01_orig" src="https://github.com/user-attachments/assets/d490c538-4745-4ad8-a2e7-8d6095066d6d" />
+<img width="410"  alt="extract01" src="https://github.com/user-attachments/assets/6d256842-76b6-41f4-851a-b9952347887e" /> **VS** <img width="410"  alt="extract01_orig" src="https://github.com/user-attachments/assets/d490c538-4745-4ad8-a2e7-8d6095066d6d" />
 
  * Subject highlighted on top
  * Better actions buttons
  * Attachment on top of mail (VS on bottom)
 
-<img width="450" alt="extract02" src="https://github.com/user-attachments/assets/08fe25bd-a236-491f-98a1-37af5c7f6fdb" />  **VS**  <img width="450"  alt="extract02_orig" src="https://github.com/user-attachments/assets/f7462bdd-2ab1-47b3-acef-1d8d9e9d22c0" />
+<img width="420" alt="extract02" src="https://github.com/user-attachments/assets/08fe25bd-a236-491f-98a1-37af5c7f6fdb" />  **VS**  <img width="420"  alt="extract02_orig" src="https://github.com/user-attachments/assets/f7462bdd-2ab1-47b3-acef-1d8d9e9d22c0" />
 
 
 
@@ -36,7 +36,7 @@ This is a full skin template to make Thunderbird look just as the great "Live Ma
 
  * Better action buttons in Interface
 
-<img width="450"  alt="extract04" src="https://github.com/user-attachments/assets/298700d9-5b3e-42c3-8b1e-d09692a4b9c3" />  **VS**   <img width="450"  alt="extract04_orig" src="https://github.com/user-attachments/assets/3bf41684-28a8-4abe-b3c5-dfa5e25e4de8" />
+<img width="400"  alt="extract04" src="https://github.com/user-attachments/assets/298700d9-5b3e-42c3-8b1e-d09692a4b9c3" />  **VS**   <img width="400"  alt="extract04_orig" src="https://github.com/user-attachments/assets/3bf41684-28a8-4abe-b3c5-dfa5e25e4de8" />
 
 
 # Install
