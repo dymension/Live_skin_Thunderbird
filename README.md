@@ -19,16 +19,23 @@ This is a full skin template to make Thunderbird look just as the great "Live Ma
   * better THREAD visibility
   * better "active" visibility
     
-<img width="1107" height="645" alt="live01" src="https://github.com/user-attachments/assets/a60e45e5-80f9-4aaf-bd4e-7ab112b8b03b" />
+<img width="1107" height="645" alt="live01" src="https://github.com/user-attachments/assets/a60e45e5-80f9-4aaf-bd4e-7ab112b8b03b" />  
+
+VS actual Thunderbird     
+
+<img width="500"  alt="extract01_orig" src="https://github.com/user-attachments/assets/d490c538-4745-4ad8-a2e7-8d6095066d6d" />
 
 .
-
 
  * Subject highlighted on top
  * Better actions buttons
  * Attachment on top of mail (VS on bottom)
 
-<img width="1107" height="645" alt="live02" src="https://github.com/user-attachments/assets/82035eca-5758-48e4-a9a4-accab9849cb4" />
+<img width="1107" height="645" alt="live02" src="https://github.com/user-attachments/assets/82035eca-5758-48e4-a9a4-accab9849cb4" />  
+
+VS actual Thunderbird  
+
+<img width="600"  alt="extract02_orig" src="https://github.com/user-attachments/assets/f7462bdd-2ab1-47b3-acef-1d8d9e9d22c0" />
 
 .
 
@@ -38,6 +45,9 @@ This is a full skin template to make Thunderbird look just as the great "Live Ma
 
 <img width="600" height="350" alt="live03" src="https://github.com/user-attachments/assets/30c5506f-bdfe-47c1-b663-3f83743a1dc0" />
 
+VS Actual thunderbird  
+
+<img width="200"  alt="extract03_orig" src="https://github.com/user-attachments/assets/95563b95-0c90-4221-8f08-461f0e5b2bcf" />
 .
 
 
@@ -82,9 +92,4 @@ To get the intended appearance:
    - Delete
 4. Click **Done**
 
-<img width="400"  alt="extract01" src="https://github.com/user-attachments/assets/6d256842-76b6-41f4-851a-b9952347887e" /> **VS** <img width="400"  alt="extract01_orig" src="https://github.com/user-attachments/assets/d490c538-4745-4ad8-a2e7-8d6095066d6d" />
 
-<img width="400" alt="extract02" src="https://github.com/user-attachments/assets/08fe25bd-a236-491f-98a1-37af5c7f6fdb" />  **VS**  <img width="400"  alt="extract02_orig" src="https://github.com/user-attachments/assets/f7462bdd-2ab1-47b3-acef-1d8d9e9d22c0" />
-
-
-<img width="300"  alt="extract03" src="https://github.com/user-attachments/assets/5dc61656-b01c-461a-bcd5-4957af0d1d33" />  **VS**  <img width="300"  alt="extract03_orig" src="https://github.com/user-attachments/assets/95563b95-0c90-4221-8f08-461f0e5b2bcf" />
