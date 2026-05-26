@@ -21,9 +21,10 @@ This is a full skin template to make Thunderbird look just as the great "Live Ma
     
 <img width="1107" height="645" alt="live01" src="https://github.com/user-attachments/assets/a60e45e5-80f9-4aaf-bd4e-7ab112b8b03b" />  
 
-VS actual Thunderbird     
+*VS actual Thunderbird*    
 
-<img width="500"  alt="extract01_orig" src="https://github.com/user-attachments/assets/d490c538-4745-4ad8-a2e7-8d6095066d6d" />
+<img width="450"  alt="image" src="https://github.com/user-attachments/assets/3e9a43d9-2ed6-4ef4-bc1d-4417d8098d37" />
+
 
 .
 
@@ -33,9 +34,9 @@ VS actual Thunderbird
 
 <img width="1107" height="645" alt="live02" src="https://github.com/user-attachments/assets/82035eca-5758-48e4-a9a4-accab9849cb4" />  
 
-VS actual Thunderbird  
+*VS actual Thunderbird*  
 
-<img width="600"  alt="extract02_orig" src="https://github.com/user-attachments/assets/f7462bdd-2ab1-47b3-acef-1d8d9e9d22c0" />
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/c231a484-2e53-44ad-9908-d9450bf1bc5d" />
 
 .
 
@@ -45,9 +46,10 @@ VS actual Thunderbird
 
 <img width="600" height="350" alt="live03" src="https://github.com/user-attachments/assets/30c5506f-bdfe-47c1-b663-3f83743a1dc0" />
 
-VS Actual thunderbird  
+*VS Actual thunderbird*  
 
-<img width="200"  alt="extract03_orig" src="https://github.com/user-attachments/assets/95563b95-0c90-4221-8f08-461f0e5b2bcf" />
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/62839aa8-6a42-4c84-85a2-5ce05185d95c" />
+
 .
 
 
