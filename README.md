@@ -21,7 +21,8 @@ This is a full skin template to make Thunderbird look just as the great "Live Ma
     
 <img width="1107" height="645" alt="live01" src="https://github.com/user-attachments/assets/a60e45e5-80f9-4aaf-bd4e-7ab112b8b03b" />
 
--
+.
+
 
  * Subject highlighted on top
  * Better actions buttons
@@ -29,14 +30,16 @@ This is a full skin template to make Thunderbird look just as the great "Live Ma
 
 <img width="1107" height="645" alt="live02" src="https://github.com/user-attachments/assets/82035eca-5758-48e4-a9a4-accab9849cb4" />
 
--
+.
+
 
  * Better current MailBox identification
  * Better spacing between mailboxes
 
 <img width="600" height="350" alt="live03" src="https://github.com/user-attachments/assets/30c5506f-bdfe-47c1-b663-3f83743a1dc0" />
 
--
+.
+
 
  * Better action buttons in Interface
 
