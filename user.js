@@ -5,4 +5,4 @@ user_pref("mail.identity.default.suppress_signature_separator", true);
 user_pref("mailnews.attachments.display.start_expanded", true);
 
 user_pref("msgcompose.font_face", "Calibri");
-user_pref("msgcompose.font_size", "medium");
+user_pref("msgcompose.font_size", "3");
