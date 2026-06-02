@@ -6,3 +6,4 @@ user_pref("mailnews.attachments.display.start_expanded", true);
 
 user_pref("msgcompose.font_face", "Calibri");
 user_pref("msgcompose.font_size", "3");
+user_pref("mail.threadpane.cardsview.rowcount", 2);
