@@ -145,16 +145,23 @@ ul[role="group"]  li.selected.current  > div.container, li.children[data-server-
  
  /* décallage de la flèche à gauche de l'icône */
  .thread-card-column {
-  margin-left: -48px;
+ /* margin-left: -48px;
   padding-left: 48px;
+  margin-left: 0 !important;
+  margin-right: 0 !important;*/
 }
 
-.thread-card-row { overflow: visible !important;
+#threadTree[rows="thread-card"] .thread-card-column:not(.read-status-column) {
+    overflow: visible !important;
+}
+
+.thread-card-row { 
+	overflow: visible !important;
  }
 
 .twisty.thread-card-button {
   left: -48px;
-  position : absolute ! important;
+  position : absolute !important;
 }
 .card-layout[data-properties~="thread-children"]  td::before {
 	display: none !important;
@@ -169,6 +176,8 @@ ul[role="group"]  li.selected.current  > div.container, li.children[data-server-
 .card-layout.children button.twisty.thread-card-button {
     border :none;
 }
+
+
 
 
 /* même icone d'ouverture pour les dossier */
@@ -187,10 +196,16 @@ ul[role="group"]  li.selected.current  > div.container, li.children[data-server-
 /************* on change les icônes des emails **********************/
 
 /* ALL */
+.read-status-column {
+    width: 48px !important;
+    height: 30px !important;
+}
+
 .read-status {
 	width: 40px !important;
 	height: 20px !important;
 	margin-left: 8px;
+	display: block !important;
 }
 
 /* UNREAD */
